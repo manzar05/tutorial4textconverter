@@ -1,0 +1,132 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    background: rgba(236, 215, 162, 0.962);
+}
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.left > img{
+    width: 300px;
+    height: 300px;
+    align-items: center;
+}
+.left > span{
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(24, 40, 1, 0.905);
+    text-shadow: 1px 1px 4px 10px grey;
+}
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    left: -4rem;
+}
+.top > span{
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px 10px grey;
+}
+.mid textarea{
+    background: rgba(255, 255, 255, 0.641);
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    color: rgba(24, 40, 1, 0.905);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 1px 60px 5px rgba(94, 109, 67, 0.863);
+}
+.last{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.summary span:nth-of-type(1){
+font-size: 20px;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+color: rgba(24, 40, 1, 0.905);
+padding-bottom: 5px;
+
+}
+.summary span:nth-of-type(2){
+    font-size: 16px;
+    color: black;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+span span:nth-of-type(1){
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+.btn2{
+    margin-left: 2rem;
+}
+@media screen and (max-width: 1046px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 850px;
+    }
+    .left{
+        width: 100vw;
+        padding-bottom: 2rem;
+    }
+    .right{
+        width: 100vw;
+        position: relative;
+        left: 0;
+    }
+    .left > img{
+        width: 200px;
+        height: 200px;
+        align-items: center;
+    }
+    .left > span{
+        font-size: 25px;
+    }
+    .last{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .last{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn2{
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 464px) {
+    .mid textarea{
+        width: 250px;
+        height: 200px;
+    }
+}

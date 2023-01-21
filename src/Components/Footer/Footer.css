@@ -1,0 +1,11 @@
+.footer{
+    background: rgba(24, 40, 1, 0.905);
+}
+.footer > span{
+    color: rgba(236, 215, 162, 0.962);
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}

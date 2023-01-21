@@ -1,0 +1,101 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.703);
+    align-items: center;
+}
+.nav > span:nth-of-type(1){
+    font-size: 35px;
+    font-family: Gumela;
+    font-weight: bold;
+    color: rgba(161, 194, 116, 0.985);
+    padding-left: 3rem;
+}
+.nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+    padding-left: 4rem;
+}
+li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+li > a:hover{
+    color: rgba(236, 215, 162, 0.962);
+    transition: .7s;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(236, 215, 162, 0.962);
+}
+input{
+    width: 200px;
+    height: 35px;
+    background: rgb(247, 247, 247);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 20px;
+    color: black;
+    padding: 5px;
+}
+@media screen and (max-width: 1046px) {
+    .nav{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    li{
+        padding-left: 1.5rem;
+    }
+    input{
+        margin-right: 0;
+        margin-left: 68px;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    .nav{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .nav > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+    }
+    li{
+        padding-left: 0;
+        padding-bottom: 1.5rem;
+    }
+    input{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 385px) {
+    .nav{
+        padding-top: 2rem;
+    }
+    .nav > span:nth-of-type(1){
+        font-size: 25px;
+        font-family: Gumela;
+        font-weight: bold;
+        color: rgb(241, 184, 39);
+        padding-left: 1rem;
+    }
+}

@@ -1,0 +1,17 @@
+button{
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(135deg, rgba(131, 199, 31, 0.707),rgba(21, 34, 3, 0.932));
+    color: whitesmoke;
+    box-shadow: 1px 1px 60px 5px rgba(94, 109, 67, 0.863);
+}
+button:hover{
+    cursor: pointer;
+    background: rgba(24, 40, 1, 0.905);
+    transition: .6s;
+    color: white;
+
+}
